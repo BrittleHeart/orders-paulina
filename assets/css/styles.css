@@ -33,6 +33,8 @@ body, html {
     max-width: 100%;
 }
 
+
+
 /* 
 ================================
     APP HEADER SECTION
@@ -95,7 +97,7 @@ body, html {
     color: rgb(239, 248, 105);
 }
 
-
+/* Header jumbotron */
 .app__header .app__header-jumbotron {
     position: absolute;
     width: 100%;
@@ -107,10 +109,92 @@ body, html {
     text-align: center;
 }
 
+/* Header jumbotron heading */
 .app__header .app__header-jumbotron .app__header-heading {
     font-size: 1.8rem;
     font-weight: 700;
     text-transform: uppercase;
     color: rgb(36, 36, 36);
     margin-bottom: 10px;
+}
+
+/* Header jumbotron content PAI */
+.app__header .app__header-jumbotron .app__header-content {
+    width: 60%;
+    padding: 20px;
+    background-color: rgba(245, 174, 22, 0.6);
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    margin: 30px auto;
+}
+
+/* Call to action */
+.app__header .app__header-jumbotron .app__header-call-to-action {
+    margin: 0 auto;
+}
+
+/* Call to action buttons */
+.app__header .app__header-jumbotron .app__header-call-to-action--button {
+    background: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 10px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background-color, border-color 0.2s ease-in-out;
+}
+
+/* Call toaction buttons hover effect */
+.app__header .app__header-jumbotron .app__header-call-to-action--button:hover {
+    background-color: rgb(245, 174, 22);
+    border-color: rgb(245, 174, 22);
+} 
+
+
+/* 
+================================
+    END APP HEADER SECTION
+================================
+*/
+
+.app__section-lorem {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    padding: 10px 0 10px 0;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+
+.app__section-lorem .app__section-lorem-leftcontent {
+    width: 100%;
+}
+
+.app__section-lorem .app_section-lorem-leftcontent--image {
+    width: 100%;
+}
+
+.app__section-lorem .app__section-lorem-rightcontent {
+    width: 92%;
+    margin: 10px auto;
+}
+
+.app__section-lorem .app__section-lorem-rightcontent-header {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2;
+    text-transform: uppercase;
+    color: rgb(245, 174, 22);
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.app__section-lorem .app__section-lorem-rightcontent-description {
+    text-align: justify;
+    line-height: 1.5;
+    font-weight: 400;
 }
