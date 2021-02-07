@@ -154,10 +154,47 @@ body, html {
 } 
 
 
-
 /* 
 ================================
     END APP HEADER SECTION
 ================================
 */
 
+.app__section-lorem {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    padding: 10px 0 10px 0;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+
+.app__section-lorem .app__section-lorem-leftcontent {
+    width: 100%;
+}
+
+.app__section-lorem .app_section-lorem-leftcontent--image {
+    width: 100%;
+}
+
+.app__section-lorem .app__section-lorem-rightcontent {
+    width: 92%;
+    margin: 10px auto;
+}
+
+.app__section-lorem .app__section-lorem-rightcontent-header {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 2;
+    text-transform: uppercase;
+    color: rgb(245, 174, 22);
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.app__section-lorem .app__section-lorem-rightcontent-description {
+    text-align: justify;
+    line-height: 1.5;
+    font-weight: 400;
+}
