@@ -62,7 +62,7 @@ body, html {
     max-width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 20px;
     align-items: center;
 }
 
@@ -87,14 +87,15 @@ body, html {
 
 /* Single link */
 .app__header .app__header-navigation-list__item--link {
-    color: rgb(131, 129, 129);
+    color: rgb(116, 114, 114);
     text-decoration: none;
     transition: color 0.2s ease-in-out;
+    font-weight: 500;
 }
 
 /* Hover effect */
 .app__header .app__header-navigation-list__item--link:hover {
-    color: rgb(239, 248, 105);
+    color: rgba(245, 174, 22, 0.6);
 }
 
 /* Header jumbotron */
@@ -160,11 +161,18 @@ body, html {
 ================================
 */
 
+
+/* 
+================================
+    APP SECTION LOREM
+================================
+*/
+
 .app__section-lorem {
     width: 100%;
     max-width: 100%;
     display: flex;
-    padding: 10px 0 10px 0;
+    padding: 20px 0 20px 0;
     justify-content: space-evenly;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
@@ -193,8 +201,478 @@ body, html {
     margin-bottom: 10px;
 }
 
-.app__section-lorem .app__section-lorem-rightcontent-description {
+.app__section-lorem .app__section-lorem-rightcontent--description {
     text-align: justify;
     line-height: 1.5;
     font-weight: 400;
+}
+
+/* 
+================================
+    APP SECTION form
+================================
+*/
+
+.app__section-form {
+    width: 100%;
+    max-width: 100%;
+    background: url('../images/volvo-v60-26-c9c6c77cfcc62a6cba6\,0\,920\,0\,0.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.app__section-form .app__section-form--content {
+    width: 100%;
+    padding: 10px;
+}
+
+.app__section-form .app__section-form--content .app__section-form--content-group {
+    width: 95%;
+    margin: 20px auto;
+}
+
+.app__section-form--content-group .app__section-form--content__input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid rgb(0,0,0);
+    background-color: rgba(255, 255, 255, .9);
+    color: rgb(120, 120, 120);
+    outline: none;
+    font-weight: 500;
+}
+
+.app__section-form--content-group .app__section-form--content__textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid rgb(0,0,0);
+    background-color: rgba(255, 255, 255, .9);
+    color: rgb(120, 120, 120);
+    outline: none;
+    font-weight: 500;
+    resize: vertical;
+}
+
+.app__section-form--content-group .app__section-form-submit--button {
+    background: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background-color, border-color 0.2s ease-in-out;
+}
+
+.app__section-form--content-group .app__section-form-submit--button:hover {
+    background-color: rgb(245, 174, 22);   
+    border-color: rgb(245, 174, 22);
+}
+
+.app__section-form .app__section-googlemap {
+    width: 100%;
+}
+
+.app__section-form .app__section-googlemap .googlemap {
+    border: 0;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* 
+================================
+    END APP SECTION form
+================================
+*/
+
+
+@media screen and (min-width: 576px) {
+    /* Header jumbotron */
+    .app__header .app__header-jumbotron {
+        width: 80%;
+        max-width: 80%;
+    }
+
+    /* Header jumbotron heading */
+    .app__header .app__header-jumbotron .app__header-heading {
+        font-size: 2rem;
+    }
+
+    /* Call to action buttons */
+    .app__header .app__header-jumbotron .app__header-call-to-action--button {
+        font-size: 14px;
+    }
+
+    .app__section-lorem .app__section-lorem-rightcontent--description {
+        font-size: 16px;
+    }
+}
+
+
+/* Media queries */
+@media screen and (min-width: 768px) {
+    /* Navigation list */
+    .app__header .app__header-navigation-list {
+        list-style: none;
+        display: initial;
+    }
+
+    /* Header jumbotron */
+    .app__header .app__header-jumbotron {
+        width: 70%;
+        max-width: 70%;
+    }
+
+    /* Header jumbotron heading */
+    .app__header .app__header-jumbotron .app__header-heading {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    /* Header jumbotron content PAI */
+    .app__header .app__header-jumbotron .app__header-content {
+        font-size: 1.4rem;
+        letter-spacing: 1.5px;
+    }
+
+    /* Call to action */
+    .app__header .app__header-jumbotron .app__header-call-to-action {
+        margin: 0 auto;
+    }
+
+    /* Call to action buttons */
+    .app__header .app__header-jumbotron .app__header-call-to-action--button {
+        font-size: 16px;
+    }
+    
+    .app__section-lorem .app__section-lorem-rightcontent-header {
+        font-size: 2.5rem;
+    }
+    
+    .app__section-lorem .app__section-lorem-rightcontent--description {
+        font-size: 18px;
+    }
+}
+
+
+
+@media screen and (min-width: 992px) {
+    /* Header jumbotron */
+    .app__header .app__header-jumbotron {
+        width: 60%;
+        max-width: 60%;
+    }
+
+    /* Header jumbotron content PAI */
+    .app__header .app__header-jumbotron .app__header-content {
+        width: 50%;
+    }
+
+    /* Header jumbotron heading */
+    .app__header .app__header-jumbotron .app__header-heading {
+        font-size: 2.5rem;
+    }
+
+    /* Call to action buttons */
+    .app__header .app__header-jumbotron .app__header-call-to-action--button {
+        font-size: 16px;
+    }
+
+    .app__section-lorem {
+        padding: 10px;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .app__section-lorem .app__section-lorem-leftcontent {
+        width: 80%;
+        margin-right: 20px;
+    }
+    
+    .app__section-lorem .app__section-lorem-rightcontent-header {
+        font-size: 2rem;
+        line-height: 2;
+        text-align: left;
+    }
+    
+    .app__section-lorem .app__section-lorem-rightcontent--description {
+        text-align: left;
+        line-height: 2;
+    }
+
+
+    /* 
+    ================================
+        APP SECTION form
+    ================================
+    */
+
+    .app__section-form {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .app__section-form .app__section-form--content {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .app__section-form--content-group .app__section-form-submit--button {
+        font-size: 13px;
+    }
+
+    .app__section-form .app__section-googlemap {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    /* Single link */
+    .app__header .app__header-navigation-list__item--link {
+        font-size: 1.4rem;
+    }
+
+    /* Header jumbotron heading */
+    .app__header .app__header-jumbotron .app__header-heading {
+        font-size: 3rem;
+    }
+
+    /* Header jumbotron content PAI */
+    .app__header .app__header-jumbotron .app__header-content {
+        font-size: 1.6rem;
+        letter-spacing: 1.5px;
+    }
+
+    /* Call to action buttons */
+    .app__header .app__header-jumbotron .app__header-call-to-action--button {
+        font-size: 17px;
+    }
+
+    .app__section-form .app__section-googlemap .googlemap {
+        border: 0;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .app__section-lorem {
+        padding: 10px;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .app__section-lorem .app__section-lorem-rightcontent {
+        margin-left: 10px;
+    }
+
+    .app__section-lorem .app__section-lorem-rightcontent-header {
+        text-align: left;
+        font-size: 2.5rem;
+    }
+    
+    .app__section-lorem .app__section-lorem-rightcontent--description {
+        font-size: 21px;
+    }
+
+
+    .app__section-form--content-group .app__section-form--content__input {
+        font-size: 1.3rem;
+    }
+
+    .app__section-form--content-group .app__section-form--content__textarea {
+        font-size: 1.3rem;
+    }
+
+    .app__section-form--content-group .app__section-form-submit--button {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .app__section-lorem .app__section-lorem-rightcontent {
+        width: 72%;
+        margin: 10px auto;
+    }
+
+
+    .app__section-form {
+        justify-content: space-between;
+    }
+    
+    /* Call to action buttons */
+    .app__header .app__header-jumbotron .app__header-call-to-action--button {
+        font-size: 21px;
+    }
+
+    .app__section-form .app__section-form--content {
+        width: 70%;
+        padding: 10px 20px;
+    }
+
+    .app__section-form .app__section-googlemap {
+        border: 0;
+        width: 80%;
+        margin-bottom: 40px;
+        padding: 0 20px;
+    }
+
+    .app__section-form .app__section-googlemap .googlemap {
+        border: 0;
+        width: 100%;
+    }
+
+    .app__section-lorem .app__section-lorem-rightcontent-header {
+        font-size: 3rem;
+        line-height: 2;
+    }
+    
+    .app__section-lorem .app__section-lorem-rightcontent--description {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    /* Header jumbotron */
+    .app__header .app__header-jumbotron {
+        width: 60%;
+        max-width: 60%;
+    }
+
+    /* Header jumbotron content PAI */
+    .app__header .app__header-jumbotron .app__header-content {
+        width: 40%;
+    }
+
+    /* Header jumbotron heading */
+    .app__header .app__header-jumbotron .app__header-heading {
+        font-size: 4rem;
+    }
+
+    /* Call to action buttons */
+    .app__header .app__header-jumbotron .app__header-call-to-action--button {
+        font-size: 19px;
+    }
+
+    .app__section-lorem {
+        padding: 10px;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .app__section-lorem .app__section-lorem-leftcontent {
+        width: 80%;
+        margin-right: 20px;
+    }
+    
+    .app__section-lorem .app__section-lorem-rightcontent-header {
+        font-size: 4rem;
+        line-height: 2;
+        text-align: left;
+    }
+    
+    .app__section-lorem .app__section-lorem-rightcontent--description {
+        text-align: left;
+        line-height: 2;
+        font-size: 23px;
+    }
+
+
+    /* 
+    ================================
+        APP SECTION form
+    ================================
+    */
+
+    .app__section-form {
+        padding: 40px 0;
+        justify-content: space-around;
+    }
+
+    .app__section-form--content-group .app__section-form-submit--button {
+        font-size: 1.3rem;
+    }
+
+    .app__section-form .app__section-form--content {
+        width: 50%;
+        padding: 10px;
+    }
+
+    .app__section-form .app__section-googlemap {
+        width: 40%;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    /* Header jumbotron */
+    .app__header .app__header-jumbotron {
+        width: 60%;
+        max-width: 60%;
+    }
+
+    /* Header jumbotron content PAI */
+    .app__header .app__header-jumbotron .app__header-content {
+        width: 60%;
+        margin: 40px auto;
+        font-size: 4rem;
+    }
+
+    /* Header jumbotron heading */
+    .app__header .app__header-jumbotron .app__header-heading {
+        font-size: 5rem;
+    }
+
+    /* Call to action buttons */
+    .app__header .app__header-jumbotron .app__header-call-to-action--button {
+        font-size: 25px;
+    }
+
+    
+    .app__section-lorem .app__section-lorem-leftcontent {
+        width: 80%;
+        margin-right: 20px;
+    }
+    
+    .app__section-lorem .app__section-lorem-rightcontent-header {
+        font-size: 5rem;
+        line-height: 2;
+        text-align: left;
+    }
+    
+    .app__section-lorem .app__section-lorem-rightcontent--description {
+        text-align: left;
+        line-height: 1.5;
+        font-size: 1.6rem;
+    }
+
+
+    /* 
+    ================================
+        APP SECTION form
+    ================================
+    */
+
+    .app__section-form {
+        padding: 50px 0;
+        justify-content: space-around;
+    }
+
+    .app__section-form--content-group .app__section-form-submit--button {
+        font-size: 1.3rem;
+    }
+
 }
