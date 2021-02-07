@@ -62,7 +62,7 @@ body, html {
     max-width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 20px;
     align-items: center;
 }
 
@@ -160,11 +160,18 @@ body, html {
 ================================
 */
 
+
+/* 
+================================
+    APP SECTION LOREM
+================================
+*/
+
 .app__section-lorem {
     width: 100%;
     max-width: 100%;
     display: flex;
-    padding: 10px 0 10px 0;
+    padding: 20px 0 20px 0;
     justify-content: space-evenly;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
@@ -193,8 +200,88 @@ body, html {
     margin-bottom: 10px;
 }
 
-.app__section-lorem .app__section-lorem-rightcontent-description {
+.app__section-lorem .app__section-lorem-rightcontent--description {
     text-align: justify;
     line-height: 1.5;
     font-weight: 400;
 }
+
+/* 
+================================
+    APP SECTION form
+================================
+*/
+
+.app__section-form {
+    width: 100%;
+    max-width: 100%;
+    background: url('../images/volvo-v60-26-c9c6c77cfcc62a6cba6\,0\,920\,0\,0.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.app__section-form .app__section-form--content {
+    width: 100%;
+    padding: 10px;
+}
+
+.app__section-form .app__section-form--content .app__section-form--content-group {
+    width: 95%;
+    margin: 20px auto;
+}
+
+.app__section-form--content-group .app__section-form--content__input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid rgb(0,0,0);
+    background-color: rgba(255, 255, 255, .9);
+    color: rgb(120, 120, 120);
+    outline: none;
+    font-weight: 500;
+}
+
+.app__section-form--content-group .app__section-form--content__textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid rgb(0,0,0);
+    background-color: rgba(255, 255, 255, .9);
+    color: rgb(120, 120, 120);
+    outline: none;
+    font-weight: 500;
+    resize: vertical;
+}
+
+.app__section-form--content-group .app__section-form-submit--button {
+    background: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 15px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background-color, border-color 0.2s ease-in-out;
+}
+
+.app__section-form .app__section-googlemap {
+    width: 100%;
+}
+
+.app__section-form .app__section-googlemap .googlemap {
+    border: 0;
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+/* 
+================================
+    END APP SECTION form
+================================
+*/
