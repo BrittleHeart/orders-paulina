@@ -282,6 +282,8 @@ body, html {
     border: 0;
     width: 100%;
     margin-top: 30px;
+    margin-bottom: 20px;
+
 }
 
 
@@ -290,6 +292,29 @@ body, html {
     END APP SECTION form
 ================================
 */
+
+
+@media screen and (min-width: 576px) {
+    /* Header jumbotron */
+    .app__header .app__header-jumbotron {
+        width: 80%;
+        max-width: 80%;
+    }
+
+    /* Header jumbotron heading */
+    .app__header .app__header-jumbotron .app__header-heading {
+        font-size: 2rem;
+    }
+
+    /* Call to action buttons */
+    .app__header .app__header-jumbotron .app__header-call-to-action--button {
+        font-size: 14px;
+    }
+
+    .app__section-lorem .app__section-lorem-rightcontent--description {
+        font-size: 16px;
+    }
+}
 
 
 /* Media queries */
@@ -337,3 +362,79 @@ body, html {
     }
 }
 
+
+
+@media screen and (min-width: 992px) {
+    /* Header jumbotron */
+    .app__header .app__header-jumbotron {
+        width: 60%;
+        max-width: 60%;
+    }
+
+    /* Header jumbotron content PAI */
+    .app__header .app__header-jumbotron .app__header-content {
+        width: 50%;
+    }
+
+    /* Header jumbotron heading */
+    .app__header .app__header-jumbotron .app__header-heading {
+        font-size: 2.5rem;
+    }
+
+    /* Call to action buttons */
+    .app__header .app__header-jumbotron .app__header-call-to-action--button {
+        font-size: 16px;
+    }
+
+    .app__section-lorem {
+        padding: 10px;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    
+    .app__section-lorem .app__section-lorem-leftcontent {
+        width: 80%;
+        margin-right: 20px;
+    }
+    
+    .app__section-lorem .app__section-lorem-rightcontent-header {
+        font-size: 2.3rem;
+        line-height: 2;
+    }
+    
+    .app__section-lorem .app__section-lorem-rightcontent--description {
+        text-align: justify;
+        line-height: 2;
+        font-weight: 400;
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+
+    /* 
+    ================================
+        APP SECTION form
+    ================================
+    */
+
+    .app__section-form {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+    }
+
+    .app__section-form .app__section-form--content {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .app__section-form--content-group .app__section-form-submit--button {
+        font-size: 13px;
+    }
+
+    .app__section-form .app__section-googlemap {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+}
