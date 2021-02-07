@@ -1,0 +1,116 @@
+/**
+*
+* Hej, tutaj masz zaprojektowana tą stronę w css'ie (Cascade Style Sheet) 
+* Jezeli koleś byłby zainteresowany inspekcją Twojej wiedzy
+*
+* To, co widzisz ponizej *, *::bofore, *::after są to tak zwante pseudo elementy
+* Które pozwalają dodawać lub odejmować potrzebny / niepotrzebny kod html'a
+*
+* Symbol *, mozesz traktować jako - Dla wszystkich elementów
+* Ponizsze style natomiast, są odpowiedzalne za całkowity reset na stronie
+*
+* Aktulnie wszystkie przeglądarki dodają na start takie style startowe.
+* Mozesz poczytać o nich więcej tutaj -> https://www.w3schools.com/cssref/css_default_values.asp
+* Pora je wyrzucić, aby latwiej było stylować.
+* 
+*/
+
+
+*, *::before, *::after {
+    margin: 0; /* Resetujemy zewnętrzne marginesy dla całego dokumentu */
+    padding: 0; /* Resetujemy wewnętrzne marginesy */
+    line-height: 1; /* Ustawiamy wysokość linii na 1 */
+    box-sizing: border-box; /* Ustawiamy tak zwany model pudełkowy -> https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+    font-family: Arial, Helvetica, sans-serif; /* Ustawienie domyślnej czcionki na Arial */
+}
+
+body, html {
+    height: 100%;
+}
+
+.app {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* 
+================================
+    APP HEADER SECTION
+================================
+*/
+
+.app__header {
+    height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    background: url('../images/2018-volvov60-40.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+
+/* Navigation section */
+.app__header .app__header-navigation {
+    position: fixed; 
+    z-index: 10;
+    background-color: rgba(255, 255, 255, .7);
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+.app__header .app__header-navigation .app__header-navigation-brand {
+    text-transform: uppercase;
+    color: rgb(131, 129, 129);
+    font-weight: 800;
+}
+
+
+/* Navigation list */
+.app__header .app__header-navigation-list {
+    list-style: none;
+    display: none;
+}
+
+/* Single li item */
+.app__header .app__header-navigation-list__item {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Single link */
+.app__header .app__header-navigation-list__item--link {
+    color: rgb(131, 129, 129);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Hover effect */
+.app__header .app__header-navigation-list__item--link:hover {
+    color: rgb(239, 248, 105);
+}
+
+
+.app__header .app__header-jumbotron {
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.app__header .app__header-jumbotron .app__header-heading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(36, 36, 36);
+    margin-bottom: 10px;
+}
