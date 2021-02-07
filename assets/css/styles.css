@@ -87,14 +87,15 @@ body, html {
 
 /* Single link */
 .app__header .app__header-navigation-list__item--link {
-    color: rgb(131, 129, 129);
+    color: rgb(116, 114, 114);
     text-decoration: none;
     transition: color 0.2s ease-in-out;
+    font-weight: 500;
 }
 
 /* Hover effect */
 .app__header .app__header-navigation-list__item--link:hover {
-    color: rgb(239, 248, 105);
+    color: rgba(245, 174, 22, 0.6);
 }
 
 /* Header jumbotron */
@@ -289,3 +290,50 @@ body, html {
     END APP SECTION form
 ================================
 */
+
+
+/* Media queries */
+@media screen and (min-width: 768px) {
+    /* Navigation list */
+    .app__header .app__header-navigation-list {
+        list-style: none;
+        display: initial;
+    }
+
+    /* Header jumbotron */
+    .app__header .app__header-jumbotron {
+        width: 70%;
+        max-width: 70%;
+    }
+
+    /* Header jumbotron heading */
+    .app__header .app__header-jumbotron .app__header-heading {
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    /* Header jumbotron content PAI */
+    .app__header .app__header-jumbotron .app__header-content {
+        font-size: 1.4rem;
+        letter-spacing: 1.5px;
+    }
+
+    /* Call to action */
+    .app__header .app__header-jumbotron .app__header-call-to-action {
+        margin: 0 auto;
+    }
+
+    /* Call to action buttons */
+    .app__header .app__header-jumbotron .app__header-call-to-action--button {
+        font-size: 16px;
+    }
+    
+    .app__section-lorem .app__section-lorem-rightcontent-header {
+        font-size: 2.5rem;
+    }
+    
+    .app__section-lorem .app__section-lorem-rightcontent--description {
+        font-size: 18px;
+    }
+}
+
