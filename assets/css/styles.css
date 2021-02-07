@@ -283,7 +283,6 @@ body, html {
     width: 100%;
     margin-top: 30px;
     margin-bottom: 20px;
-
 }
 
 
@@ -390,6 +389,7 @@ body, html {
         padding: 10px;
         justify-content: space-between;
         flex-direction: row;
+        align-items: center;
     }
     
     .app__section-lorem .app__section-lorem-leftcontent {
@@ -398,16 +398,14 @@ body, html {
     }
     
     .app__section-lorem .app__section-lorem-rightcontent-header {
-        font-size: 2.3rem;
+        font-size: 2rem;
         line-height: 2;
+        text-align: left;
     }
     
     .app__section-lorem .app__section-lorem-rightcontent--description {
-        text-align: justify;
+        text-align: left;
         line-height: 2;
-        font-weight: 400;
-        font-size: 16px;
-        padding: 0 10px;
     }
 
 
@@ -435,6 +433,246 @@ body, html {
     .app__section-form .app__section-googlemap {
         width: 100%;
         padding: 0 10px;
+    }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    /* Single link */
+    .app__header .app__header-navigation-list__item--link {
+        font-size: 1.4rem;
+    }
+
+    /* Header jumbotron heading */
+    .app__header .app__header-jumbotron .app__header-heading {
+        font-size: 3rem;
+    }
+
+    /* Header jumbotron content PAI */
+    .app__header .app__header-jumbotron .app__header-content {
+        font-size: 1.6rem;
+        letter-spacing: 1.5px;
+    }
+
+    /* Call to action buttons */
+    .app__header .app__header-jumbotron .app__header-call-to-action--button {
+        font-size: 17px;
+    }
+
+    .app__section-form .app__section-googlemap .googlemap {
+        border: 0;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    .app__section-lorem {
+        padding: 10px;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .app__section-lorem .app__section-lorem-rightcontent {
+        margin-left: 10px;
+    }
+
+    .app__section-lorem .app__section-lorem-rightcontent-header {
+        text-align: left;
+        font-size: 2.5rem;
+    }
+    
+    .app__section-lorem .app__section-lorem-rightcontent--description {
+        font-size: 21px;
+    }
+
+
+    .app__section-form--content-group .app__section-form--content__input {
+        font-size: 1.3rem;
+    }
+
+    .app__section-form--content-group .app__section-form--content__textarea {
+        font-size: 1.3rem;
+    }
+
+    .app__section-form--content-group .app__section-form-submit--button {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .app__section-lorem .app__section-lorem-rightcontent {
+        width: 72%;
+        margin: 10px auto;
+    }
+
+
+    .app__section-form {
+        justify-content: space-between;
+    }
+    
+    /* Call to action buttons */
+    .app__header .app__header-jumbotron .app__header-call-to-action--button {
+        font-size: 21px;
+    }
+
+    .app__section-form .app__section-form--content {
+        width: 70%;
+        padding: 10px 20px;
+    }
+
+    .app__section-form .app__section-googlemap {
+        border: 0;
+        width: 80%;
+        margin-bottom: 40px;
+        padding: 0 20px;
+    }
+
+    .app__section-form .app__section-googlemap .googlemap {
+        border: 0;
+        width: 100%;
+    }
+
+    .app__section-lorem .app__section-lorem-rightcontent-header {
+        font-size: 3rem;
+        line-height: 2;
+    }
+    
+    .app__section-lorem .app__section-lorem-rightcontent--description {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    /* Header jumbotron */
+    .app__header .app__header-jumbotron {
+        width: 60%;
+        max-width: 60%;
+    }
+
+    /* Header jumbotron content PAI */
+    .app__header .app__header-jumbotron .app__header-content {
+        width: 40%;
+    }
+
+    /* Header jumbotron heading */
+    .app__header .app__header-jumbotron .app__header-heading {
+        font-size: 4rem;
+    }
+
+    /* Call to action buttons */
+    .app__header .app__header-jumbotron .app__header-call-to-action--button {
+        font-size: 19px;
+    }
+
+    .app__section-lorem {
+        padding: 10px;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .app__section-lorem .app__section-lorem-leftcontent {
+        width: 80%;
+        margin-right: 20px;
+    }
+    
+    .app__section-lorem .app__section-lorem-rightcontent-header {
+        font-size: 4rem;
+        line-height: 2;
+        text-align: left;
+    }
+    
+    .app__section-lorem .app__section-lorem-rightcontent--description {
+        text-align: left;
+        line-height: 2;
+        font-size: 23px;
+    }
+
+
+    /* 
+    ================================
+        APP SECTION form
+    ================================
+    */
+
+    .app__section-form {
+        padding: 40px 0;
+        justify-content: space-around;
+    }
+
+    .app__section-form--content-group .app__section-form-submit--button {
+        font-size: 1.3rem;
+    }
+
+    .app__section-form .app__section-form--content {
+        width: 50%;
+        padding: 10px;
+    }
+
+    .app__section-form .app__section-googlemap {
+        width: 40%;
+        padding: 0 10px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    /* Header jumbotron */
+    .app__header .app__header-jumbotron {
+        width: 60%;
+        max-width: 60%;
+    }
+
+    /* Header jumbotron content PAI */
+    .app__header .app__header-jumbotron .app__header-content {
+        width: 60%;
+        margin: 40px auto;
+        font-size: 4rem;
+    }
+
+    /* Header jumbotron heading */
+    .app__header .app__header-jumbotron .app__header-heading {
+        font-size: 5rem;
+    }
+
+    /* Call to action buttons */
+    .app__header .app__header-jumbotron .app__header-call-to-action--button {
+        font-size: 25px;
+    }
+
+    
+    .app__section-lorem .app__section-lorem-leftcontent {
+        width: 80%;
+        margin-right: 20px;
+    }
+    
+    .app__section-lorem .app__section-lorem-rightcontent-header {
+        font-size: 5rem;
+        line-height: 2;
+        text-align: left;
+    }
+    
+    .app__section-lorem .app__section-lorem-rightcontent--description {
+        text-align: left;
+        line-height: 1.5;
+        font-size: 1.6rem;
+    }
+
+
+    /* 
+    ================================
+        APP SECTION form
+    ================================
+    */
+
+    .app__section-form {
+        padding: 50px 0;
+        justify-content: space-around;
+    }
+
+    .app__section-form--content-group .app__section-form-submit--button {
+        font-size: 1.3rem;
     }
 
 }
