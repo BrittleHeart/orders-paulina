@@ -261,12 +261,16 @@ body, html {
     border: 1px solid rgb(0, 0, 0);
     border-radius: 5px;
     padding: 15px;
-    text-transform: capitalize;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.6);
     font-weight: 600;
     cursor: pointer;
     font-size: 13px;
     transition: background-color, border-color 0.2s ease-in-out;
+}
+
+.app__section-form--content-group .app__section-form-submit--button:hover {
+    background-color: rgb(245, 174, 22);   
+    border-color: rgb(245, 174, 22);
 }
 
 .app__section-form .app__section-googlemap {
