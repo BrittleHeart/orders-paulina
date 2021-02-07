@@ -114,3 +114,34 @@ body, html {
     color: rgb(36, 36, 36);
     margin-bottom: 10px;
 }
+
+.app__header .app__header-jumbotron .app__header-content {
+    width: 60%;
+    padding: 20px;
+    background-color: rgba(245, 174, 22, 0.6);
+    font-weight: 600;
+    letter-spacing: 1.3px;
+    margin: 30px auto;
+}
+
+.app__header .app__header-jumbotron .app__header-call-to-action {
+    margin: 0 auto;
+}
+
+.app__header .app__header-jumbotron .app__header-call-to-action--button {
+    background: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 10px;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 13px;
+    transition: background-color, border-color 0.2s ease-in-out;
+}
+
+.app__header .app__header-jumbotron .app__header-call-to-action--button:hover {
+    background-color: rgb(245, 174, 22);
+    border-color: rgb(245, 174, 22);
+} 
